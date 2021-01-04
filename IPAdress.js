@@ -3,15 +3,20 @@
     Fuction: takes in a CIDR block (e.g. 10.0.0.1/24) and
         add all IP addresses within that block to the data store with status “available”
     
+    Getting the Util to work right was tricky, I have learned I have gotten use to Javascript.
+
+    I wanted to make a quick json local file but it seems like it will not store date like I like, 
+    Was going to host it to my website but I Forgotten how to do it quickly.
+
+
 
     Author: Carlo Gonzalez
 */
 
 
-
 var Netmask = require('netmask').Netmask;
 
-var block = new Netmask('0.0.0.0/0');
+var block = new Netmask('0.0.0.0/24');
 var IPlist = [];
 
 
@@ -81,7 +86,6 @@ function _isInBlock(ip){
        
         block.forEach( function(item, index, array){
             if( ip == item){
-                console.log(count);
                 answer = count;
             }
             count++;
@@ -92,9 +96,8 @@ function _isInBlock(ip){
 
 }
 
-createIPAdress('10.0.0.0/24');
- console.log(IPlist[0]);
-//listIP();
-acuquireIP("10.0.0.216");
-resleaseIP("10.15.220.216");
-resleaseIP("10.0.0.216");
+// //createIPAdress('10.0.0.0/24');
+// //listIP();
+// acuquireIP("10.0.0.216");
+// resleaseIP("10.15.220.216");
+// resleaseIP("10.0.0.216");
