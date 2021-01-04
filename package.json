@@ -1,0 +1,25 @@
+{
+  "name": "ip-rest-api-gonzalez",
+  "version": "1.0.0",
+  "description": "IP- Adress Management",
+  "main": "IPAdress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trillion-repos/ip-rest-api-Gonzalez.git"
+  },
+  "author": "Carlo Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trillion-repos/ip-rest-api-Gonzalez/issues"
+  },
+  "homepage": "https://github.com/trillion-repos/ip-rest-api-Gonzalez#readme",
+  "dependencies": {
+    "cidr-tools": "^3.0.4",
+    "ip-utils": "^2.4.0",
+    "netmask": "^1.0.6"
+  },
+  "devDependencies": {}
+}
